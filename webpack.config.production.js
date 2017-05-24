@@ -7,8 +7,7 @@ const PATHS = {
   presentation: [
     path.join(__dirname, 'index.js'),
     path.join(__dirname, 'images', 'index.js'),
-    path.join(__dirname, 'presentation'),
-    path.join(__dirname, 'node_modules', 'react-tweet-embed')
+    path.join(__dirname, 'presentation')
   ]
 };
 
@@ -23,10 +22,7 @@ module.exports = {
     publicPath: "/dist/"
   },
   resolve: {
-    extensions: [".jsx", ".js"],
-    alias: {
-      'react-tweet-embed': path.join(__dirname, 'node_modules', 'react-tweet-embed', 'dist', 'tweet-embed.js')
-    }
+    extensions: [".jsx", ".js"]
   },
   resolveLoader: {
     alias: {

@@ -1,6 +1,6 @@
 // Import React
 import React from "react";
-import TweetEmbed from "react-tweet-embed";
+import TweetEmbed from "./tweet-embed";
 import mapValues from "lodash/mapValues";
 
 // Import Spectacle Core tags
