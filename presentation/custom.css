@@ -14,3 +14,7 @@ pre {
 li {
   line-height: 1.5;
 }
+
+.redux-flow {
+  flex: initial !important;
+}

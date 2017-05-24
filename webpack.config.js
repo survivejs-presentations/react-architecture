@@ -73,6 +73,9 @@ module.exports = {
       test: /\.png$/,
       loader: "url-loader?limit=10000mimetype=image/png"
     }, {
+      test: /\.mp4$/,
+      loader: "url-loader?limit=10000&mimetype=video/mp4"
+    }, {
       test: /\.jpg$/,
       loader: "url-loader?limit=10000mimetype=image/jpg"
     }]
