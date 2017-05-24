@@ -23,7 +23,10 @@ module.exports = {
     publicPath: "/dist/"
   },
   resolve: {
-    extensions: [".jsx", ".js"]
+    extensions: [".jsx", ".js"],
+    alias: {
+      'react-tweet-embed': path.join(__dirname, 'node_modules', 'react-tweet-embed', 'dist', 'tweet-embed.js')
+    }
   },
   resolveLoader: {
     alias: {
