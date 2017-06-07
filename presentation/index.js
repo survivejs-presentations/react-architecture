@@ -149,6 +149,18 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Heading size={1}>
+            Exercises
+          </Heading>
+          <List>
+            <Appear><ListItem>The goal of these exercises is to evaluate the approaches</ListItem></Appear>
+            <Appear><ListItem>The target is to develop a counter application that can be used to track observations. Interpret this as you like</ListItem></Appear>
+            <Appear><ListItem>Develop a pretotype (paper with the design first!), a prototype, or design an architecture and implement a tracer bullet against it</ListItem></Appear>
+            <Appear><ListItem>After completion, form a group with people that used the other approaches. Compare results!</ListItem></Appear>
+          </List>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary">
             State Management
