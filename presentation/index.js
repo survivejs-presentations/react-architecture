@@ -505,6 +505,36 @@ export default class Presentation extends React.Component {
 
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary" fit>
+            Server Side Rendering
+          </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>
+            <Link href="https://survivejs.com/webpack/output/server-side-rendering/">Server Side Rendering</Link> Briefly
+          </Heading>
+          <List>
+            <Appear><ListItem>Initial payload with HTML, state (not just app)</ListItem></Appear>
+            <Appear><ListItem>Potential performance and SEO benefits</ListItem></Appear>
+            <Appear><ListItem>Technical cost in terms of complexity (frontend and backend differ technically)</ListItem></Appear>
+            <Appear><ListItem>Ideal - streaming rendering? Examples: <Link href="https://github.com/FormidableLabs/rapscallion">rapscallion</Link>, <Link href="https://hackernoon.com/why-is-marko-fast-a20796cb8ae3">marko</Link>, Video (30 mins): <Link href="https://www.youtube.com/watch?v=UhdGiVy3_Nk">How Streaming Can Supercharge React?</Link></ListItem></Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>
+            Exercises
+          </Heading>
+          <List>
+            <Appear><ListItem>0. Go through <Link href="https://survivejs.com/webpack/output/server-side-rendering/">SurviveJS SSR tutorial</Link></ListItem></Appear>
+            <Appear><ListItem>1. Integrate <Link href="https://github.com/FormidableLabs/rapscallion">rapscallion</Link> to the project</ListItem></Appear>
+            <Appear><ListItem>2. Study <Link href="https://www.npmjs.com/package/webpack-flush-chunks">webpack-flush-chunks</Link>*</ListItem></Appear>
+            <Appear><ListItem>3. Learn to use <Link href="https://medium.com/webpack/how-to-use-webpacks-new-magic-comment-feature-with-react-universal-component-ssr-a38fd3e296a">code splitting with SSR</Link>**</ListItem></Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="secondary">
+          <Heading size={2} textColor="tertiary" fit>
             Typing with Flow
           </Heading>
         </Slide>
@@ -541,6 +571,17 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>A separate tool to run</ListItem></Appear>
             <Appear><ListItem>Limited runtime checks through Babel plugins, also erasure from production</ListItem></Appear>
             <Appear><ListItem>Value even with limited usage</ListItem></Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>
+            Exercises
+          </Heading>
+          <List>
+            <Appear><ListItem>0. Introduce Flow to the SSR project</ListItem></Appear>
+            <Appear><ListItem>1. Type the backend with Flow</ListItem></Appear>
+            <Appear><ListItem>2. Type the frontend with Flow*</ListItem></Appear>
           </List>
         </Slide>
 
@@ -609,6 +650,16 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>Popular third party services have been designed traditional repositories in mind</ListItem></Appear>
             <Appear><ListItem>Hard to collaborate if your monorepo is private and you want to contract</ListItem></Appear>
             <Appear><ListItem>Git log can become rather large</ListItem></Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>
+            Exercises
+          </Heading>
+          <List>
+            <Appear><ListItem>0. Convert the SSR project as a monorepo</ListItem></Appear>
+            <Appear><ListItem>1. Add more packages (components to render) to the SSR project*</ListItem></Appear>
           </List>
         </Slide>
 
