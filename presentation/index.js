@@ -518,6 +518,7 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>Potential performance and SEO benefits</ListItem></Appear>
             <Appear><ListItem>Technical cost in terms of complexity (frontend and backend differ technically)</ListItem></Appear>
             <Appear><ListItem>Ideal - streaming rendering? Examples: <Link href="https://github.com/FormidableLabs/rapscallion">rapscallion</Link>, <Link href="https://hackernoon.com/why-is-marko-fast-a20796cb8ae3">marko</Link>, Video (30 mins): <Link href="https://www.youtube.com/watch?v=UhdGiVy3_Nk">How Streaming Can Supercharge React?</Link></ListItem></Appear>
+            <Appear><ListItem><Link href="https://hackernoon.com/server-side-rendering-shootout-with-marko-preact-rax-react-and-vue-25e1ae17800f">Server-side Rendering Shootout with Marko, Preact, Rax, React and Vue</Link></ListItem></Appear>
           </List>
         </Slide>
 
@@ -677,6 +678,7 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>Complete rewrite - Big Bang</ListItem></Appear>
             <Appear><ListItem>Incremental rewrite - Start from a component/view</ListItem></Appear>
             <Appear><ListItem>Test old system first on high level, then port to React</ListItem></Appear>
+            <Appear><ListItem>Example: <Link href="https://slack.engineering/rebuilding-slacks-emoji-picker-in-react-bfbd8ce6fbfe">Rebuilding Slack’s Emoji Picker in React</Link></ListItem></Appear>
           </List>
         </Slide>
 
