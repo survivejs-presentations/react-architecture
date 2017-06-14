@@ -518,7 +518,17 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>A separate tool to run</ListItem></Appear>
             <Appear><ListItem>Limited runtime checks through Babel plugins, also erasure from production</ListItem></Appear>
             <Appear><ListItem>Value even with limited usage</ListItem></Appear>
-            <Appear><ListItem><Link href="http://thejameskyle.com/adopting-flow-and-typescript.html">Adopting Flow & TypeScript</Link>, <Link href="http://jaredforsyth.com/type-systems-js-dev/">Type systems will make you a better JavaScript programmer</Link></ListItem></Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>
+            Flow Opinions
+          </Heading>
+          <List>
+            <Appear><ListItem><Link href="http://jan.varwig.org/2017/02/15/flow-vs-typescript.html">Flow vs. Typescript</Link> (went with TypeScript)</ListItem></Appear>
+            <Appear><ListItem><Link href="http://thejameskyle.com/adopting-flow-and-typescript.html">Adopting Flow & TypeScript</Link> (controversial)</ListItem></Appear>
+            <Appear><ListItem><Link href="http://jaredforsyth.com/type-systems-js-dev/">Type systems will make you a better JavaScript programmer</Link></ListItem></Appear>
           </List>
         </Slide>
 
