@@ -137,7 +137,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={1}>
+          <Heading size={2}>
             Recap
           </Heading>
           <List>
@@ -148,14 +148,14 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={1}>
+          <Heading size={2}>
             Exercises
           </Heading>
           <List>
             <Appear><ListItem>The goal of these exercises is to evaluate the approaches</ListItem></Appear>
             <Appear><ListItem>The target is to develop an e-shop. Interpret this as you like</ListItem></Appear>
-            <Appear><ListItem>Develop a pretotype (paper with the design first!), a prototype, or design an architecture and implement a tracer bullet against it</ListItem></Appear>
-            <Appear><ListItem>After completion, form a group with people that used the other approaches. Compare results!</ListItem></Appear>
+            <Appear><ListItem>0. Develop a pretotype (paper with the design first!), a prototype, or design an architecture and implement a tracer bullet against it</ListItem></Appear>
+            <Appear><ListItem>1. After completion, form a group with people that used the other approaches. Compare results!</ListItem></Appear>
           </List>
         </Slide>
 
@@ -181,7 +181,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading caps fit size={1}>
+          <Heading size={2}>
             Single File
           </Heading>
           <CodePane>
@@ -199,7 +199,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading caps fit size={1}>
+          <Heading size={2}>
             Directory per Concept
           </Heading>
           <CodePane>
@@ -223,7 +223,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={1} caps>
+          <Heading size={2}>
             Components
           </Heading>
           <img src={images.storybook} height="524px" alt="Storybook" />
@@ -233,7 +233,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading caps fit size={1}>
+          <Heading size={2}>
             Directory per Component
           </Heading>
           <CodePane>
@@ -268,7 +268,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading caps fit size={1}>
+          <Heading size={2}>
             Directory per View
           </Heading>
           <CodePane>
@@ -319,7 +319,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading caps fit size={1}>
+          <Heading size={2}>
             Directory per Feature
           </Heading>
           <CodePane>
@@ -350,7 +350,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={1} caps>
+          <Heading size={2}>
             Atomic Design
           </Heading>
           <video autoPlay loop margin="40px auto" height="524px">
@@ -363,7 +363,7 @@ export default class Presentation extends React.Component {
 
         <Slide transition={slideTransition}>
           <Link href="https://arc.js.org/">
-            <Heading caps fit size={1}>
+            <Heading size={2}>
               Atomic React
             </Heading>
           </Link>
@@ -427,7 +427,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading caps fit size={1}>
+          <Heading fit size={2}>
             Separating State from Components
           </Heading>
           <CodePane>
@@ -481,7 +481,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={1}>
+          <Heading size={2}>
             Recap
           </Heading>
           <List>
@@ -489,6 +489,36 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>Evolve as you go, {`don't`} be afraid to abstract</ListItem></Appear>
             <Appear><ListItem>Big applications are fractal (smaller applications inside bigger ones)</ListItem></Appear>
             <Appear><ListItem>Remember Conway, avoid dogma</ListItem></Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>
+            Exercises
+          </Heading>
+          <List>
+            <Appear><ListItem>0. Choose an existing project (this can be the e-shop)</ListItem></Appear>
+            <Appear><ListItem>1. Consider different structures against it. List pros/cons</ListItem></Appear>
+            <Appear><ListItem>2. Consider what happens when new requirements show up (say the application size doubles)*</ListItem></Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="secondary">
+          <Heading size={2} textColor="tertiary" fit>
+            Typing with Flow
+          </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>
+            Flow
+          </Heading>
+          <List>
+            <Appear><ListItem>Type <b>checker</b>, not a language (think as extension)</ListItem></Appear>
+            <Appear><ListItem>A separate tool to run</ListItem></Appear>
+            <Appear><ListItem>Limited runtime checks through Babel plugins, also erasure from production</ListItem></Appear>
+            <Appear><ListItem>Value even with limited usage</ListItem></Appear>
+            <Appear><ListItem><Link href="http://thejameskyle.com/adopting-flow-and-typescript.html">Adopting Flow & TypeScript</Link>, <Link href="http://jaredforsyth.com/type-systems-js-dev/">Type systems will make you a better JavaScript programmer</Link></ListItem></Appear>
           </List>
         </Slide>
 
