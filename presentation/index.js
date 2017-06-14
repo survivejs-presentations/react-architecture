@@ -510,9 +510,9 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>
+          <Link href="https://flow.org/"><Heading size={2}>
             Flow
-          </Heading>
+          </Heading></Link>
           <List>
             <Appear><ListItem>Type <b>checker</b>, not a language (think as extension)</ListItem></Appear>
             <Appear><ListItem>A separate tool to run</ListItem></Appear>
@@ -529,6 +529,86 @@ export default class Presentation extends React.Component {
             <Appear><ListItem><Link href="http://jan.varwig.org/2017/02/15/flow-vs-typescript.html">Flow vs. Typescript</Link> (went with TypeScript)</ListItem></Appear>
             <Appear><ListItem><Link href="http://thejameskyle.com/adopting-flow-and-typescript.html">Adopting Flow & TypeScript</Link> (controversial)</ListItem></Appear>
             <Appear><ListItem><Link href="http://jaredforsyth.com/type-systems-js-dev/">Type systems will make you a better JavaScript programmer</Link></ListItem></Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>
+            Flow
+          </Heading>
+          <List>
+            <Appear><ListItem>Type <b>checker</b>, not a language (think as extension)</ListItem></Appear>
+            <Appear><ListItem>A separate tool to run</ListItem></Appear>
+            <Appear><ListItem>Limited runtime checks through Babel plugins, also erasure from production</ListItem></Appear>
+            <Appear><ListItem>Value even with limited usage</ListItem></Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="secondary">
+          <Heading size={2} textColor="tertiary" fit>
+            Monorepos
+          </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>
+            Lerna Briefly
+          </Heading>
+          <List>
+            <Appear><ListItem><Link href="https://lernajs.io/">Lerna</Link> is a tool for managing multiple packages</ListItem></Appear>
+            <Appear><ListItem>Expects a <b>packages</b> directory</ListItem></Appear>
+            <Appear><ListItem><b>lerna bootstrap</b> - Install dependencies of all packages</ListItem></Appear>
+            <Appear><ListItem><b>lerna publish</b> - Update and publish changed packages</ListItem></Appear>
+            <Appear><ListItem><b>lerna run</b> - Run a script on each package (say, a build script)</ListItem></Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>
+            Lerna Versioning Modes
+          </Heading>
+          <List>
+            <Appear><ListItem>Fixed (think Babel)</ListItem></Appear>
+            <Appear><ListItem>Independent</ListItem></Appear>
+            <Appear><ListItem>Ideal? - <Link href="https://github.com/lerna/lerna/issues/298">hybrid mode</Link>. Not going to happen.</ListItem></Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading caps size={2}>
+            The Good
+          </Heading>
+          <List>
+            <Appear><ListItem>Monorepo avoids configuration overhead (packaging, testing)</ListItem></Appear>
+            <Appear><ListItem>One repository to maintain over many - Alternative: consume configuration as a dependency</ListItem></Appear>
+            <Appear><ListItem>Easier to author packages &rarr; you make more packages. Less of a problem with <Link href="https://www.npmjs.com/package/mrm">mrm</Link></ListItem></Appear>
+            <Appear><ListItem>Leads to decoupled design - Logic separate from React</ListItem></Appear>
+            <Appear><ListItem>Possible to write integration tests</ListItem></Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading caps size={2}>
+            The Bad
+          </Heading>
+          <List>
+            <Appear><ListItem>Monorepos {"aren't"} fully understood &rarr; Tooling not stable yet</ListItem></Appear>
+            <Appear><ListItem>If you {"aren't"} careful, the repository can become huge (see Babel)</ListItem></Appear>
+            <Appear><ListItem>Harder to contribute due to the exotic setup?</ListItem></Appear>
+            <Appear><ListItem>Difficult to manage packages with different velocities (forces independent versioning)</ListItem></Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading caps size={2}>
+            The Ugly
+          </Heading>
+          <List>
+            <Appear><ListItem>Single issue tracker, potentially harder to manage</ListItem></Appear>
+            <Appear><ListItem>No automated releases yet. Ideal: tag &rarr; CI releases for you</ListItem></Appear>
+            <Appear><ListItem>Popular third party services have been designed traditional repositories in mind</ListItem></Appear>
+            <Appear><ListItem>Hard to collaborate if your monorepo is private and you want to contract</ListItem></Appear>
+            <Appear><ListItem>Git log can become rather large</ListItem></Appear>
           </List>
         </Slide>
 
